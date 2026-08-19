@@ -1,7 +1,7 @@
 {
-  "name": "@compilescent/media-downloader",
-  "version": "1.0.0",
-  "description": "A polished cross-platform terminal media downloader with a beautiful dependency-free TUI powered by yt-dlp.",
+  "name": "compilescent-media-downloader",
+  "version": "1.1.0",
+  "description": "A polished cross-platform terminal media downloader with an arrow-key TUI, queues, presets, format listing, and yt-dlp integration.",
   "type": "module",
   "bin": {
     "media-downloader": "bin/media-downloader.js",
@@ -30,8 +30,18 @@
     "terminal",
     "tui",
     "youtube",
+    "instagram",
+    "tiktok",
+    "twitter",
+    "reddit",
+    "soundcloud",
+    "vimeo",
+    "twitch",
     "video",
     "audio",
+    "batch-downloader",
+    "download-manager",
+    "termux",
     "cli",
     "compilescent"
   ],
@@ -49,7 +59,6 @@
     "node": ">=18"
   },
   "publishConfig": {
-    "access": "public",
     "registry": "https://registry.npmjs.org/"
   }
 }
