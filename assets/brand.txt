@@ -1,0 +1,9 @@
+Compilescent Media Downloader
+Tagline: Beautiful terminal downloads, powered by yt-dlp.
+Primary CLI: media-downloader
+Short aliases: cmdl, mdl
+Palette:
+  Cyan: #31D7E8
+  Violet: #8A5CF6
+  Amber: #F7B955
+  Ink: #10131A

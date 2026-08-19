@@ -1,0 +1,55 @@
+{
+  "name": "@compilescent/media-downloader",
+  "version": "1.0.0",
+  "description": "A polished cross-platform terminal media downloader with a beautiful dependency-free TUI powered by yt-dlp.",
+  "type": "module",
+  "bin": {
+    "media-downloader": "./bin/media-downloader.js",
+    "cmdl": "./bin/media-downloader.js",
+    "mdl": "./bin/media-downloader.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "assets",
+    "README.md",
+    "CHANGELOG.md",
+    "SECURITY.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node ./bin/media-downloader.js",
+    "check": "node --check ./bin/media-downloader.js && node --check ./lib/*.js",
+    "pack:dry": "npm pack --dry-run",
+    "release:dry": "npm publish --dry-run --access public"
+  },
+  "keywords": [
+    "yt-dlp",
+    "media",
+    "downloader",
+    "terminal",
+    "tui",
+    "youtube",
+    "video",
+    "audio",
+    "cli",
+    "compilescent"
+  ],
+  "author": "Compilescent",
+  "license": "MIT",
+  "homepage": "https://github.com/compilescent/media-downloader#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/compilescent/media-downloader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/compilescent/media-downloader/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
