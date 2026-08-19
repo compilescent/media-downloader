@@ -4,9 +4,9 @@
   "description": "A polished cross-platform terminal media downloader with a beautiful dependency-free TUI powered by yt-dlp.",
   "type": "module",
   "bin": {
-    "media-downloader": "./bin/media-downloader.js",
-    "cmdl": "./bin/media-downloader.js",
-    "mdl": "./bin/media-downloader.js"
+    "media-downloader": "bin/media-downloader.js",
+    "cmdl": "bin/media-downloader.js",
+    "mdl": "bin/media-downloader.js"
   },
   "files": [
     "bin",
