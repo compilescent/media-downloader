@@ -1,6 +1,8 @@
 # Compilescent Media Downloader
 
-A polished cross-platform terminal media downloader with a dependency-free arrow-key TUI. It uses `yt-dlp` as the download engine and focuses on a better user experience: presets, format listing, playlist control, subtitles, metadata, thumbnails, queue support, progress display, history, system checks, and clean Compilescent branding.
+Compilescent Media Downloader is a Node.js command line tool for running common `yt-dlp` download tasks from a terminal menu or direct flags.
+
+It keeps the wrapper small: no runtime npm dependencies, no bundled download engine, and no background services. Install `yt-dlp` for downloading. Install `ffmpeg` if you need merging, audio extraction, or metadata embedding.
 
 > Download only content you own, have permission to save, or are legally allowed to archive. This tool does not bypass DRM or platform access controls.
 
@@ -9,8 +11,6 @@ A polished cross-platform terminal media downloader with a dependency-free arrow
 ```sh
 npm install -g compilescent-media-downloader
 ```
-
-You also need `yt-dlp`. `ffmpeg` is recommended for merging video/audio and extracting audio.
 
 ```sh
 media-downloader --doctor
@@ -35,20 +35,20 @@ cmdl "https://example.com/watch/video"
 mdl "https://example.com/watch/video" --audio
 ```
 
-## Features
+## What it does
 
-- Beautiful arrow-key ANSI TUI with zero runtime npm dependencies
-- Cross-platform Node.js CLI for macOS, Linux, Windows, and Termux
+- Arrow-key terminal menu, with a non-interactive fallback
+- Works on macOS, Linux, Windows, and Termux where Node.js and `yt-dlp` are available
 - Presets: best, audio, 1080p, 720p, mobile, archive
 - Format listing with `-F` / `--list-formats`
 - Queue mode for multiple URLs
-- Playlist opt-in so accidental playlist downloads are avoided
-- Optional subtitles, metadata, thumbnails, cookies-from-browser, and fragment concurrency
-- Progress display powered by `yt-dlp --newline`
+- Playlist downloads are opt-in
+- Optional subtitles, metadata, thumbnails, browser cookies, and fragment concurrency
+- Progress display from `yt-dlp --newline`
 - Recent download history
-- Doctor command for `yt-dlp` and `ffmpeg`
-- Dry-run mode for inspecting commands before execution
-- Legal-use reminder and no DRM bypass logic
+- `--doctor` checks for `yt-dlp` and `ffmpeg`
+- `--dry-run` prints the command before running it
+- No DRM bypass code
 
 ## Install yt-dlp and ffmpeg
 

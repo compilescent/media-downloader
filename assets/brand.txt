@@ -1,5 +1,5 @@
 Compilescent Media Downloader
-Tagline: Beautiful terminal downloads, powered by yt-dlp.
+Description: Terminal media download helper for yt-dlp.
 NPM package: compilescent-media-downloader
 Primary CLI: media-downloader
 Short aliases: cmdl, mdl
